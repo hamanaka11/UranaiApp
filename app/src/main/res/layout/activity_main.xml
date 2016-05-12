@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--layout_width:幅-->
+<!--layout_height:高さ-->
+<!--orientation:方向(縦か横)-->
+<!--padding:空白(上下左右全てに空白)-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/screen_padding"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#f0e68c">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_txv_title"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/title_textSize"
+        android:textColor="#00aaee"/>
+    <requestFocus
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_txv_subtitle"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/subtitle_textSize"
+        android:textColor="#00aaaa"/>
+
+
+    <!--textAppearance:文字のスタイル（斜体、文字、大きさなど）-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_txv_name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+    <!--android:inputType"textpersonName"人の名前-->
+    <!--android:ems="10":入力文字数-->
+    <!--android:id="@+id/main~:識別子（プログラムから出す際に必要）-->
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/main_etx_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_txv_birthday"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!--era=年号、歴史-->
+    <Spinner
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_spn_era"
+        android:entries="@array/main_spn_era"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="2"
+            android:id="@+id/etx_year"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_txv_year"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="2"
+            android:id="@+id/etx_month"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_txv_month"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="2"
+            android:id="@+id/etx_day"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_txv_day"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_txv_gender"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <!--<ラジオボタン>-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main_rd_grp">
+
+        <!--<android:checked"true":最初のチェックを入れるかどうか>-->
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_radio_btn_male"
+            android:id="@+id/main_rd_btn_male"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_radio_btn_female"
+            android:id="@+id/main_rd_btn_female"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_radio_btn_twinkie"
+            android:id="@+id/main_rd_twinkie"
+            android:checked="true"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/main_btn_divine"
+            android:id="@+id/main_btn_divine"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/main_btn_1divine"
+            android:id="@+id/main_btn_init"
+            android:layout_weight="1"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

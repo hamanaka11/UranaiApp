@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="title_textSize">50sp</dimen>
+    <dimen name="subtitle_textSize">30sp</dimen>
+    <!--spは文字の大きさ-->
+    <dimen name="screen_padding">10dp</dimen>
+    <!--dpは幅-->
+    <dimen name="title_marginBottom">20dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

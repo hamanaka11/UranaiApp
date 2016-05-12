@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Newproject</string>
+
+    <string name="main_txv_title">占いアプリ</string>
+    <string name="main_txv_subtitle">あなたの人生占います。</string>
+    <string name="main_txv_name">名前</string>
+    <string name="main_txv_birthday">生年月日</string>
+    <string name="main_txv_year">年</string>
+    <string name="main_txv_month">月</string>
+    <string name="main_txv_day">日</string>
+    <string name="main_txv_gender">性別</string>
+
+    <!--Buttonに表示する文字列-->
+    <string name="main_btn_divine">占う</string>
+    <string name="main_btn_1divine">取り消し</string>
+
+    <!--性別データ-->
+    <string name="main_radio_btn_male">男性</string>
+    <string name="main_radio_btn_female">女性</string>
+    <string name="main_radio_btn_twinkie">おかま</string>
+    <!--生年月日の年号データ-->
+    <string-array name="main_spn_era">
+        <item>明治</item>
+        <item>大正</item>
+        <item>昭和</item>
+        <item>平成</item>
+    </string-array>
+
+    <!--占い結果データ-->
+    <string-array name="result_txv_divine_data">
+        <item>いいことが起きるでしょう！</item>
+        <item>最悪の1日になるでしょう！</item>
+        <item>微妙な1日になるでしょう！</item>
+        <item>普通の1日になるでしょう！</item>
+        <item>大きな決断をするでしょう！</item>
+        <item>異性に告白されるでしょう！</item>
+        <item>落とし物をするでしょう！</item>
+        <item>忘れ物をするでしょう！</item>
+        <item>問題を解決できるでしょう！</item>
+        <item>お祝いされるでしょう！</item>
+        <item>傘をさすでしょう！</item>
+        <item>くすぐられるでしょう！</item>
+        <item>同性に告白されるでしょう！</item>
+    </string-array>
+</resources><!--タグの終わり-->
